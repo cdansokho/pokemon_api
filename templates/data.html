@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Liste des données</h1>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Sp. Atk</th>
+      <th>Sp. Def</th>
+      <th>Speed</th>
+      <th>Generation</th>
+      <th>Legendary</th>
+    </tr>
+  </thead>
+    <tbody>
+      {% for donnee in donnees %}
+        <tr>
+        <td>{{ donnee[0] }}</td>
+        <td>{{ donnee[1] }}</td>
+        <td>{{ donnee[2] }}</td>
+        <td>{{ donnee[3] }}</td>
+        <td>{{ donnee[4] }}</td>
+        <td>{{ donnee[5] }}</td>
+        <td>{{ donnee[6] }}</td>
+        <td>{{ donnee[7] }}</td>
+        <td>{{ donnee[8] }}</td>
+        <td>{{ donnee[9] }}</td>
+        <td>{{ donnee[10] }}</td>
+        <td>{{ donnee[11] }}</td>
+        <td>{{ donnee[12] }}</td>
+          <!-- ... -->
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {{ pagination.links }}
+{% endblock %}
+
