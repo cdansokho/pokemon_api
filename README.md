@@ -8,7 +8,7 @@ git clone https://github.com/cdansokho/pokemon_api.git
 ```
 ##### Navigate to the project directory: 
 ```py
-cd pokemon-flask-api
+cd pokemon_api
 ```
 ##### Create a virtual environment: 
 ```py
