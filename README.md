@@ -4,7 +4,7 @@
 ## Installation
 ##### Clone this repository: 
 ```py
-git clone https://github.com/yourusername/pokemon-flask-api.git
+git clone https://github.com/cdansokho/pokemon_api.git
 ```
 ##### Navigate to the project directory: 
 ```py
